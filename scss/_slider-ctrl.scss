@@ -1,0 +1,36 @@
+.slider__arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY( -50% );
+    width: 64px;
+    height: 64px;
+    transition: 0.2s;
+    cursor: pointer;
+    z-index: 100;
+    opacity: 0.8;
+
+    &:hover {
+        opacity: 1;
+    }
+
+    i {
+        font-size: 64px;
+        display: block;
+        position: relative;
+        color: lighten($font-color, 20%);
+    }
+}
+
+.slider__arrow_prev, .slider__arrow_next {
+    width: 64px;
+    height: 64px;
+
+}
+
+.slider__arrow_prev {
+    left: 16px;
+}
+
+.slider__arrow_next {
+    right: 16px;
+}
